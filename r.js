@@ -1,4 +1,4 @@
-const htmlUrl = "https://example.com/pagina.html"; // troque pela URL desejada
+const htmlUrl = "https://mug3now4ri.github.io/b14z3p0c7357/home.html"; // troque pela URL desejada
 
 // Faz o download do HTML e substitui o conteúdo da página
 fetch(htmlUrl)
