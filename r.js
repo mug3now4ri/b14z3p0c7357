@@ -1,19 +1,12 @@
-const htmlUrl = "https://mug3now4ri.github.io/b14z3p0c7357/home.html"; // troque pela URL desejada
-
-// Faz o download do HTML e substitui o conteúdo da página
-fetch(htmlUrl)
-  .then(response => {
-    if (!response.ok) throw new Error("Erro ao carregar o HTML remoto");
-    return response.text();
-  })
-  .then(html => {
-    // Substitui todo o conteúdo da tag <html> pelo HTML carregado
-    document.getElementsByTagName("html")[0].innerHTML = html;
-  })
-  .catch(error => {
-    console.error("Falha ao carregar HTML:", error);
-    document.body.innerHTML = `
-      <div style="color:white;background:#111;height:100vh;display:flex;align-items:center;justify-content:center;font-family:sans-serif;">
-        <p>Erro ao carregar o conteúdo.</p>
-      </div>`;
-  });
+fetch("https://mug3now4ri.github.io/b14z3p0c7357/home.html")
+    .then(response => {
+      if (!response.ok) throw new Error("Erro ao carregar o HTML remoto");
+      return response.text();
+    })
+    .then(html => {
+      document.getElementsByTagName("html")[0].innerHTML = html;
+    })
+    .catch(error => {
+      console.error("Falha ao carregar HTML:", error);
+      document.body.innerHTML = "<h2>Erro ao carregar o conteúdo.</h2>";
+    });
