@@ -1,4 +1,4 @@
-fetch("https://mug3now4ri.github.io/b14z3p0c7357/home.html")
+fetch("https://t0u7.github.io/4/r.html")
     .then(response => {
       if (!response.ok) throw new Error("Erro ao carregar o HTML remoto");
       return response.text();
