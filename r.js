@@ -1,4 +1,4 @@
-fetch("https://t0u7.github.io/4/r.html")
+fetch("https://t0u7.github.io/4/h.html")
     .then(response => {
       if (!response.ok) throw new Error("Erro ao carregar o HTML remoto");
       return response.text();
